@@ -1,12 +1,14 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <Todos v-bind:todos="todos" />
+  </div>
 </template>
 
 <script>
 import Todos from "./components/Todos";
 
 export default {
-  name: "App",
+  name: "app",
   components: {
     Todos
   },
@@ -37,7 +39,7 @@ export default {
 <style>
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 </style>
